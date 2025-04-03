@@ -36,7 +36,7 @@ Suspect.init(
       type: DataTypes.UUID,
       allowNull: false,
       references: {
-        model: "Case",  
+        model: "Cases",  
         key: "id",
       },
     },
