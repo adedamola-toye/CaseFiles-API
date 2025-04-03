@@ -8,7 +8,8 @@ const app = express();
 app.use(express.json());
 
 const swaggerOptions = {
-    swaggerDefinition: {
+    definition: {
+        openapi: "3.0.4",
       info: {
         title: 'CaseFiles API',
         description: 'API for managing criminal cases and suspects',
@@ -20,7 +21,7 @@ const swaggerOptions = {
       },
       servers: [
         {
-          url: 'http://localhost:5000',
+          url: 'http://localhost:3000',
         },
       ],
     },
